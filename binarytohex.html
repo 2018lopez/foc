@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>And Gate</title>
+    <title>Binary to Hexidecimal </title>
        <!-- Style Sheet and Boostrap -->
        <link rel="stylesheet" href="css/style.css">
        <!-- CSS only -->
@@ -17,18 +17,22 @@
         
     </header>
    <article>
-       <h1 class="heading">And Gate</h1>
+       <h1 class="heading">Binary to Hexidecimal </h1>
       <div class="container">
         <div class="row">
             <div class="col">
-                <h2>Input</h2>
-                <button class="btn btn-success" onclick="document.getElementById('andgate').src='assets/img/andoffon.png'" >1 0</button>
-                <button class="btn btn-success" onclick="document.getElementById('andgate').src='assets/img/and2on.png'" >1 1</button>
-                <button class="btn btn-danger" onclick="document.getElementById('andgate').src='assets/img/and2off.png'">0 0</button>
+               
+                <img src="assets/img/bintohex.jpg" alt="binarytohex" >
             </div>
             <div class="col">
-                <h2>Output</h2>
-                <img src="assets/img/and2off.png" alt="And Gate" id="andgate">
+                <h2>Controls</h2>
+                <p>Enter any 4 digit binary number:</p>
+                <input type="number" id="inputBin">
+                <button onclick="binToHex()" class="btn btn-success">Converter</button>
+                <br>
+                <br>
+                <p><b> Hexidecimal Value :</b> <span id="result"></span> </p>
+                
             </div>
         </div>
       </div>
@@ -41,4 +45,11 @@
         <p>@ Developed by Imer Lopez</p>
     </footer>
 </body>
+<script>
+    function binToHex() {
+        let x = document.getElementById("inputBin").value;
+        let hexOut = parseInt(x , 2).toString(16).toUpperCase();
+        document.getElementById("result").innerHTML = hexOut;
+  }
+</script>
 </html>

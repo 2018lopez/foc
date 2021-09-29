@@ -69,6 +69,25 @@ article{
   z-index: 999;
   display: flex;
 }
+
+a{
+
+  text-decoration: none;
+}
+
+li{
+
+  text-decoration: none;
+
+}
+
+.about-img{
+
+    width:90%;
+    height:90%;
+    border-radius: 40em;
+
+}
   /* Footer */
 
   footer{
