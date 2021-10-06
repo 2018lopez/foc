@@ -1,4 +1,5 @@
 let btn = document.getElementById('btn');
+let bmi = document.getElementsByClassName('bmiStatus')
 
 btn.addEventListener('click', function(){
     const w = 703;
@@ -12,7 +13,7 @@ btn.addEventListener('click', function(){
     let convertFT = ft * inches;
     console.log(convertFT);
     console.log(ins);
-    let totalHeight = convertFT + parseFloat(ins);
+    let totalHeight = convertFT + parseFloat(ins)
     console.log(totalHeight);
    
     
@@ -20,6 +21,25 @@ btn.addEventListener('click', function(){
 
 
     document.getElementById('bmi-output').value = result;
+
+    if( result < 18.5 ){
+
+        document.querySelector('.bmiStatus').innerHTML = "UnderWeigth"
+        document.querySelector('.bmiStatus').style.color = "red"
+    }else if( result >= 18.5 && result <= 24.9){
+
+        document.querySelector('.bmiStatus').innerHTML = "Heathly"
+        document.querySelector('.bmiStatus').style.color = "green"
+    } else if( result >= 25.0 && result <= 29.9){
+        document.querySelector('.bmiStatus').innerHTML = "Overweight"
+        document.querySelector('.bmiStatus').style.color = "red"
+
+    }else{
+
+        document.querySelector('.bmiStatus').innerHTML = "Obese"
+        document.querySelector('.bmiStatus').style.color = "red"
+
+    }
 
     
 })

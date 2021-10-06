@@ -4,36 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BMI -- Imer Lopez</title>
+    <title>BMI Calculator </title>
+       <!-- Style Sheet and Boostrap -->
+       <link rel="stylesheet" href="css/style.css">
+       <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+       <!-- End of Style Sheet and Boostrap -->
 </head>
 <body>
-    <h1>BMI Calculator</h1>
-    <div class="container">
-        <label for="weight-input" id="wlabel">Your Weight(lbs):</label><input type="text" id="weight-input">
-        <label for="height-input" id="hlabel">Your Height:</label>
+  <header>
+    <h2><b>Fundamentals of Computing</b></h2>
     
-        <input type="text" id="ft-input" placeholder="Feet">
-        <input type="text" id="in-input" placeholder="inches">
-        <button id="btn">Calculate</button>
-        <label for="bmi-output" id="bmilabel">Your BMI:</label><input type="text" id="bmi-output">
+</header>
+<article>
+   <h1 class="heading">BMI Calculator  </h1>
+  <div class="container">
+    <div class="row">
+        <div class="col">
+          <h3>BMI INDEX</h3>
+          <ul>
+            <li> Underweight - Below 18.5 </li>
+            <li>Healthy - 18.5–24.9</li>
+            <li>Overweight - 25.0–29.9 </li>
+            <li>Obese - 30.0 and above</li>
+          </ul>
+          
+        <br>
+          <div class="bmiForm">
+              <label for="weight-input" id="wlabel">Your Weight(lbs):</label>
+              <input type="text" id="weight-input">
+
+              <label for="height-input" id="hlabel">Your Height:</label>
+              <input type="text" id="ft-input" placeholder="Feet">
+              <input type="text" id="in-input" placeholder="inches">
+
+              <button id="btn" class="btn btn-success">Calculate</button>
+
+              <label for="bmi-output" id="bmilabel">Your BMI:</label><input type="text" id="bmi-output">
+
+              <span style="color: green; font-size: 25px;" class="bmiStatus">Status</span>
+          </div>
+          
+        </div>
+        
     </div>
-    <div id="table">
-        <table>
-            <caption>BMI INDEX</caption>
-            <tr>
-              <th>Underweight</th>
-              <th>Healthy</th> 
-              <th>Overweight</th>
-              <th>Obese</th>
-            </tr>
-            <tr>
-              <td>Below 18.5</td>
-              <td>18.5–24.9</td>
-              <td>25.0–29.9</td>
-              <td>30.0 and above</td>
-            </tr>
-          </table>
-    </div>
+  </div>
+</article>
+
+<div class="backbtn">
+   <a href="project.html" class="btn btn-success"> Back</a>
+</div>
+<footer>
+    <p>@ Developed by Imer Lopez</p>
+</footer>
 </body>
 <script src="js/bmi.js"></script>
 </html>
