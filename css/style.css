@@ -92,8 +92,20 @@ li{
   font-size: 22px;
 }
 
+.foc{
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding-top: 20px;
+}
+.flipflop{
 
 
+  width:100%;
+  height: 80%;
+}
 .about-img{
 
     width:90%;
