@@ -87,6 +87,7 @@ li{
   padding: 10px;
   width: 50%;
   height: 5%;
+  margin-bottom: 70px;
 
  
   font-size: 22px;
@@ -105,6 +106,26 @@ li{
 
   width:100%;
   height: 80%;
+}
+.projectmenu {
+  width: 500px;
+}
+
+.projectmenu a {
+  background-color: #eee;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.projectmenu a:hover {
+  background-color: #ccc;
+}
+
+.projectmenu a.active {
+  background-color: #04AA6D;
+  color: white;
 }
 .about-img{
 
