@@ -134,6 +134,11 @@ li{
     border-radius: 100px;
 
 }
+
+.img-cache{
+
+  width:500px;
+}
   /* Footer */
 
   footer{

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+
+    <!-- Style Sheet and Boostrap -->
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!-- End of Style Sheet and Boostrap -->
+
+</head>
+<body>
+    <header>
+        <h2><b>Fundamentals of Computing</b></h2>
+        
+    </header>
+    <section>
+
+        <div class="topnav">
+            <a class="active" href="index.html">Course</a>
+            <a href="project.html">Project</a>
+            <a href="concepts.html">Concepts</a>
+            <a href="database.html">Databases</a>
+            <a href="documentation.html">Documentation</a>
+            <a href="aboutus.html">Dev Team</a>
+        </div>
+        
+
+    </section>
+
+    <article class="content-p">
+        <h1>Cache Memory</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>Input</h2>
+                    <button class="btn btn-success" onclick="document.getElementById('cache').src='assets/img/cachememory0.png'" > 0 </button>
+                    <button class="btn btn-success" onclick="document.getElementById('cache').src='assets/img/cachememory1.png'" title="Data request enters CPU"> 1</button>
+                    <button class="btn btn-success" onclick="document.getElementById('cache').src='assets/img/cachememory2.png'" title="CPU checks cache memory for request data"> 2</button>
+                    <button class="btn btn-success" onclick="document.getElementById('cache').src='assets/img/cachememory3.png'" title="Cache commands CPU its doesn't have the request data" > 3</button>
+                    <button class="btn btn-success" onclick="document.getElementById('cache').src='assets/img/cachememory4.png'" title="CPU request data RAM"> 4</button>
+                    <button class="btn btn-success" onclick="document.getElementById('cache').src='assets/img/cachememory5.png'" title="If data isn't pre-load on RAM; its fetch frin HDD"> 5</button>
+                    <button class="btn btn-success" onclick="document.getElementById('cache').src='assets/img/cachememory6.png'" title="Data is send by fragments to the CPU from the RAM " > 6</button>
+                    <button class="btn btn-success" onclick="document.getElementById('cache').src='assets/img/cachememory7.png'" title="Cache reads ahead and loads the rest of the data from RAM"> 7</button>
+                    <button class="btn btn-success" onclick="document.getElementById('cache').src='assets/img/cachememory8.png'" title="CPU loads the remainder of data from Cache" > 8</button>
+                    <button class="btn btn-success" onclick="document.getElementById('cache').src='assets/img/cachememory9.png'" title="Once it recieves the remaing fragments the CPU will complete the process and send the requested data." > 9</button>
+                </div>
+                <div class="col">
+                    <h2>Output</h2>
+                    <img class ="img-cache" src="assets/img/cachememory0.png" alt="cache" id="cache">
+                </div>
+            </div>
+          </div>
+     
+       
+    </article>
+    <div class="backbtn">
+        <a href="project.html" class="btn btn-success"> Back</a>
+    </div>
+    <footer>
+        <p>@ Powered by People and Machine</p>
+    </footer>
+</body>
+</html>
